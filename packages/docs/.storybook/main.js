@@ -1,5 +1,5 @@
 /** @type { import('@storybook/react-vite').StorybookConfig } */
-module.exports = {
+const config = {
   stories: [
     "../src/pages/**/*.stories.mdx", 
     "../src/stories/**/*.stories.@(js|jsx|ts|tsx)"
@@ -10,12 +10,12 @@ module.exports = {
     "@storybook/addon-interactions",
     "@storybook/addon-a11y",
   ],
-  framework: "@storybook/react",
-  "core": {
-    "builder": "@storybook/builder-vite"
+  framework: {
+    name: "@storybook/react-vite",
+    options: {},
   },
-  "features": {
-    "storyStoreV7": TextTrackCue
+  docs: {
+    autodocs: "tag",
   },
   viteFinal: ( config, { configType }) => {
     if (configType === 'PRODUCTION') {
@@ -25,4 +25,4 @@ module.exports = {
     return config
   }
 };
-
+export default config;
