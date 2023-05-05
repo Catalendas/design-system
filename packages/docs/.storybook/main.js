@@ -18,7 +18,7 @@ const config = {
     autodocs: "tag",
   },
   viteFinal: ( config, { configType }) => {
-    if (configType == 'PRODUCTION') {
+    if (configType === 'PRODUCTION') {
       config.base = '/design-system/'
     }
 
