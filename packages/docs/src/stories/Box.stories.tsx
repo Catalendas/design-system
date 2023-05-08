@@ -1,4 +1,4 @@
-import { Box, BoxProps, Text } from '@ignite-ui/react'
+import { Box, BoxProps, Text } from '@catalendas-ignite-ui/react'
 import { StoryObj, Meta } from '@storybook/react'
 
 export default {

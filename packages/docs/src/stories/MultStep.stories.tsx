@@ -1,4 +1,4 @@
-import { Box, MultStep, MultStepProps } from '@ignite-ui/react'
+import { Box, MultStep, MultStepProps } from '@catalendas-ignite-ui/react'
 import { Meta, StoryObj } from '@storybook/react'
 
 export default {
